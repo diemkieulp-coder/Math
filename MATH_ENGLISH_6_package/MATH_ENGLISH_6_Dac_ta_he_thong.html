@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đặc tả hệ thống MATH ENGLISH 6</title>
+<style>
+:root{--navy:#173B63;--blue:#3985E8;--teal:#21B5A5;--yellow:#F5C95B;--ink:#20334A;--muted:#64748B;--bg:#F5F7FB;--line:#DCE4EF;--green:#239B70}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font:16px/1.65 Inter,"Segoe UI",Arial,sans-serif}
+.cover{background:linear-gradient(135deg,#142D50,#1E5684);color:#fff;padding:64px max(24px,calc((100% - 1120px)/2));min-height:390px}
+.logo{display:inline-flex;align-items:center;gap:16px}.mark{background:var(--yellow);color:var(--navy);font-size:28px;font-weight:800;border-radius:15px;padding:12px 17px}.brand{font-size:18px;font-weight:800;letter-spacing:.08em}.tag{color:#D6E7FA;font-size:13px;letter-spacing:.12em}.cover h1{font-size:clamp(34px,5vw,58px);line-height:1.1;margin:52px 0 14px}.cover p{font-size:20px;color:#D6E7FA;max-width:760px}.pills span{display:inline-block;border:1px solid #7593B5;border-radius:999px;padding:6px 13px;margin:12px 8px 0 0;font-size:13px}
+.layout{max-width:1180px;margin:auto;padding:34px 24px;display:grid;grid-template-columns:250px minmax(0,1fr);gap:38px}
+nav{position:sticky;top:18px;align-self:start;max-height:calc(100vh - 36px);overflow:auto;border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff}
+nav b{display:block;margin:0 0 12px;color:var(--navy)}nav a{display:block;text-decoration:none;color:var(--muted);padding:6px 8px;border-radius:7px;font-size:13px}nav a:hover{background:#EEF5FF;color:var(--blue)}
+main{min-width:0}h2{font-size:28px;color:var(--navy);margin:42px 0 14px;padding-bottom:9px;border-bottom:2px solid #E8EEF6}h3{font-size:20px;color:var(--navy);margin:26px 0 10px}h4{font-size:16px;margin:18px 0 7px}p{margin:9px 0}ul,ol{padding-left:24px}li{margin:5px 0}
+.lead{font-size:18px;color:#42556C}.callout{background:#EEF6FF;border-left:4px solid var(--blue);padding:15px 18px;border-radius:8px;margin:18px 0}.success{background:#E9F7F1;border-left-color:var(--green)}.warn{background:#FFF7E5;border-left-color:#D99A21}
+table{width:100%;border-collapse:collapse;margin:14px 0 22px;font-size:14px}th{background:#173B63;color:#fff;text-align:left}th,td{padding:10px 12px;border:1px solid var(--line);vertical-align:top}tr:nth-child(even) td{background:#F8FAFD}
+figure{margin:22px 0;border:1px solid var(--line);border-radius:16px;padding:12px;background:#fff}figure img{width:100%;height:auto;display:block;border-radius:10px}figcaption{font-size:13px;color:var(--muted);padding:9px 4px 0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff}.card h4{margin-top:0}.tagline{color:var(--muted);font-size:14px}
+pre{background:#142D50;color:#E7F1FC;padding:18px;border-radius:12px;overflow:auto;font-size:13px;line-height:1.55}
+.flow{display:flex;flex-direction:column;align-items:center;gap:8px;margin:18px 0}.flow div{width:min(100%,560px);padding:13px 16px;text-align:center;background:#EEF5FF;border:1px solid #D5E4F6;border-radius:10px;font-weight:650}.flow .down{background:none;border:0;padding:0;color:var(--blue)}
+footer{background:#142D50;color:#D6E7FA;padding:30px 24px;text-align:center;margin-top:50px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}nav{position:relative;top:auto;max-height:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px}nav b{grid-column:1/-1}.grid{grid-template-columns:1fr}}
+@media print{nav{display:none}.layout{display:block;max-width:none;padding:0}.cover{min-height:0;padding:35px}.cover h1{margin-top:25px}h2{break-after:avoid}figure,table,.card{break-inside:avoid}body{font-size:11pt}}
+</style>
+</head>
+<body>
+<header class="cover">
+ <div class="logo"><div class="mark">Aa</div><div><div class="brand">MATH ENGLISH 6</div><div class="tag">SPEAK • LISTEN • LEARN • MASTER</div></div></div>
+ <h1>ĐẶC TẢ HỆ THỐNG ỨNG DỤNG<br>LUYỆN PHÁT ÂM TIẾNG ANH</h1>
+ <p>Học từ vựng Toán bằng tiếng Anh – Luyện phát âm chuẩn – Tự tin giao tiếp.</p>
+ <div class="pills"><span>Đối tượng: Học sinh lớp 6</span><span>Modern EdTech</span><span>AI Pronunciation</span><span>Web App + PWA</span></div>
+</header>
+<div class="layout">
+<nav><b>MỤC LỤC</b>
+<a href="#vision">I. Tầm nhìn và mục tiêu</a><a href="#modules">II. Cấu trúc chức năng</a><a href="#design">III. UI/UX – Design System</a><a href="#tech">IV. Kiến trúc công nghệ và AI</a><a href="#database">V. Cơ sở dữ liệu</a><a href="#nfr">VI. Yêu cầu phi chức năng</a><a href="#roadmap">VII. Lộ trình phát triển</a><a href="#advanced">VIII. Tính năng nâng cao</a><a href="#delivery">IX. Tiêu chuẩn bàn giao</a><a href="#implementation">X. Định hướng triển khai</a><a href="#decisions">XI. Cấu hình dự án</a></nav>
+<main>
+<p class="lead">Đề xuất phát triển MATH ENGLISH 6 thành nền tảng luyện phát âm và sử dụng từ vựng tiếng Anh có tích hợp AI. Học sinh có thể học, nghe, nói, thực hành, làm bài tập và theo dõi tiến bộ; giáo viên có thể tạo nội dung, giao bài và theo dõi kết quả.</p>
+<section id="vision">
+<h2>I. Tầm nhìn và mục tiêu hệ thống</h2>
+<h3>1. Mục tiêu</h3>
+<table><tr><th>Nhóm</th><th>Mục tiêu</th></tr><tr><td>Học sinh</td><td>Tự luyện phát âm, nghe và sử dụng từ.</td></tr><tr><td>Giáo viên</td><td>Tạo danh sách từ vựng, giao bài và theo dõi kết quả.</td></tr><tr><td>AI</td><td>Phân tích phát âm, nhận diện lỗi và đưa ra hướng dẫn.</td></tr><tr><td>Hệ thống</td><td>Lưu tiến độ, điểm số và lịch sử học tập.</td></tr></table>
+<h3>2. Nguyên tắc thiết kế</h3><ul><li>Dễ sử dụng, phù hợp học sinh 11–12 tuổi.</li><li>Giao diện tiếng Việt kết hợp tiếng Anh.</li><li>Mỗi thao tác quan trọng chỉ cần 1–2 lần chạm.</li><li>Ưu tiên học qua âm thanh, hình ảnh và tương tác.</li><li>Phản hồi tích cực, không tạo áp lực khi học sinh phát âm chưa tốt.</li><li>Responsive trên máy tính, máy tính bảng và điện thoại.</li></ul>
+<h3>3. Đối tượng và phân quyền</h3>
+<table><tr><th>Vai trò</th><th>Quyền sử dụng</th></tr><tr><td>Student</td><td>Học từ, luyện nói, làm bài tập, xem tiến bộ.</td></tr><tr><td>Teacher</td><td>Quản lý lớp, từ vựng, bài tập, kết quả.</td></tr><tr><td>Admin</td><td>Quản lý tài khoản, nội dung, cấu hình hệ thống.</td></tr></table>
+<div class="callout"><b>Định hướng nội dung:</b> Hệ thống có hai nguồn từ vựng: General English (tiếng Anh thông dụng phù hợp lớp 6) và Math English (thuật ngữ Toán như fraction, numerator, denominator, perimeter, area, angle, vertex, parallel lines...).</div>
+</section>
+<section id="modules">
+<h2>II. Cấu trúc chức năng tổng thể</h2>
+<p>Đề xuất 10 phân hệ chính, được thiết kế thống nhất và có thể phát triển theo từng giai đoạn.</p>
+<div class="grid">
+<div class="card"><h4>01. Dashboard</h4><p class="tagline">Trang chủ, lời chào, từ hôm nay, bài được giao, điểm gần nhất, số từ đã học, streak và huy hiệu.</p></div>
+<div class="card"><h4>02. Dictionary</h4><p class="tagline">Tìm từ, IPA UK/US, định nghĩa Anh–Việt, ví dụ, từ loại, họ từ, đồng nghĩa, trái nghĩa và collocations.</p></div>
+<div class="card"><h4>03. Pronunciation Lab</h4><p class="tagline">Nghe mẫu, ghi âm, AI đánh giá, phản hồi theo từ/âm vị và luyện lại.</p></div>
+<div class="card"><h4>04. Listening Lab</h4><p class="tagline">Nghe–chọn, nghe–nối, nghe–điền, nghe–sắp xếp, minimal pairs và dictation.</p></div>
+<div class="card"><h4>05. Phonetics Academy</h4><p class="tagline">Bài học IPA, nguyên âm, phụ âm, âm tiết, trọng âm, ngữ điệu và khẩu hình.</p></div>
+<div class="card"><h4>06. Practice Center</h4><p class="tagline">Bài tập phát âm, từ vựng, nghe, tình huống giao tiếp và thử thách Toán tiếng Anh.</p></div>
+<div class="card"><h4>07. Math English</h4><p class="tagline">Thư viện từ Toán 6 theo chủ đề, có âm thanh, ví dụ toán học và bài tập.</p></div>
+<div class="card"><h4>08. My Progress</h4><p class="tagline">Từ đã học, số lần luyện, điểm trung bình, từ cần ôn và biểu đồ tiến bộ.</p></div>
+<div class="card"><h4>09. Teacher Portal</h4><p class="tagline">Tạo lớp, danh sách từ, giao bài, theo dõi lỗi, xuất báo cáo Excel/PDF.</p></div>
+<div class="card"><h4>10. Admin</h4><p class="tagline">Quản trị tài khoản, từ điển, ngân hàng câu hỏi, dịch vụ AI, quyền truy cập và chi phí.</p></div>
+</div>
+<figure><img src="assets/01-dashboard.jpg" alt="Minh họa giao diện Dashboard"><figcaption>Hình 1. Minh họa Dashboard – trang chủ MATH ENGLISH 6.</figcaption></figure>
+<h3>1. Dashboard – Trang chủ</h3>
+<ul><li>Lời chào và tên học sinh.</li><li>Thanh tìm kiếm từ vựng.</li><li>Nút bắt đầu luyện phát âm.</li><li>Từ vựng học hôm nay; bài tập được giao; điểm phát âm gần nhất.</li><li>Số từ đã học, Learning Streak, thành tích và huy hiệu.</li></ul>
+<p>Nút truy cập nhanh: <b>Learn Words</b> – <b>Practice Speaking</b> – <b>Listening</b> – <b>Math Vocabulary</b> – <b>My Progress</b>.</p>
+<h3>2. Dictionary – Từ điển thông minh</h3>
+<p>Quy trình: nhập từ → kiểm tra chính tả → trả thông tin → nghe, xem ví dụ và lưu vào sổ từ vựng.</p>
+<table><tr><th>Trường dữ liệu</th><th>Nội dung</th></tr>
+<tr><td>Word / Part of Speech</td><td>Từ tiếng Anh / từ loại.</td></tr><tr><td>UK IPA / US IPA</td><td>Phiên âm Anh–Anh / Anh–Mỹ.</td></tr><tr><td>Syllables</td><td>Số âm tiết và cách chia âm tiết.</td></tr><tr><td>Primary / Secondary Stress</td><td>Trọng âm chính / trọng âm phụ.</td></tr><tr><td>English Definition</td><td>Giải nghĩa bằng tiếng Anh.</td></tr><tr><td>Vietnamese Meaning</td><td>Nghĩa tiếng Việt.</td></tr><tr><td>Example / Translation</td><td>Câu ví dụ và bản dịch.</td></tr><tr><td>Word Family</td><td>Họ từ.</td></tr><tr><td>Synonyms / Antonyms</td><td>Từ đồng nghĩa / trái nghĩa.</td></tr><tr><td>Collocations</td><td>Các cụm từ thường đi kèm.</td></tr></table>
+<div class="card"><h4>Ví dụ thẻ từ vựng: fraction</h4><div style="font-size:34px;font-weight:800;color:#173B63">fraction</div><div style="font-size:22px;color:#239B70">/ˈfræk.ʃən/</div><p>noun • Mathematics • 2 syllables • Primary stress: 1st syllable</p><p><b>English definition:</b> A part of a whole.</p><p><b>Nghĩa tiếng Việt:</b> Phân số; một phần của tổng thể.</p><p><b>Example:</b> One half is a fraction.</p><p><b>Dịch:</b> Một phần hai là một phân số.</p><p><b>Điều khiển:</b> British / American; tốc độ đọc 0.5×–1.5×; nghe, lặp lại và ghi âm.</p></div>
+<figure><img src="assets/02-pronunciation-lab.jpg" alt="Minh họa phòng luyện phát âm"><figcaption>Hình 2. Minh họa Pronunciation Lab với lựa chọn giọng và tốc độ.</figcaption></figure>
+<h3>3. Pronunciation Lab – Phòng luyện phát âm bằng AI</h3>
+<ol><li><b>View Word:</b> hiển thị từ, IPA và trọng âm.</li><li><b>Listen:</b> nghe mẫu UK hoặc US.</li><li><b>Record:</b> cấp quyền microphone và ghi âm.</li><li><b>AI Analysis:</b> nhận diện, phân tích âm vị và mức độ chính xác.</li><li><b>Feedback:</b> hiển thị điểm, âm tốt, âm cần cải thiện.</li><li><b>Retry:</b> nghe lại, luyện lại và so sánh các lần.</li></ol>
+<h4>Thang điểm đề xuất cho câu/từ phù hợp</h4>
+<table><tr><th>Tiêu chí</th><th>Trọng số đề xuất</th><th>Ghi chú</th></tr><tr><td>Pronunciation Accuracy</td><td>60%</td><td>Độ chính xác âm.</td></tr><tr><td>Stress</td><td>15%</td><td>Trọng âm.</td></tr><tr><td>Fluency</td><td>15%</td><td>Độ trôi chảy; chủ yếu phù hợp cụm từ/câu.</td></tr><tr><td>Completeness</td><td>10%</td><td>Đọc đầy đủ.</td></tr><tr><th>Tổng</th><th>100%</th><th>Trọng số cần hiệu chỉnh sau thử nghiệm.</th></tr></table>
+<div class="callout warn"><b>Nguyên tắc chấm điểm:</b> Với bài luyện một từ đơn, không nên áp dụng máy móc tiêu chí fluency như khi đọc câu dài. AI nhận diện đúng từ không đồng nghĩa với phát âm chuẩn. Cần đánh giá âm vị và chất lượng bản ghi; kết quả là điểm ước lượng, không phải đánh giá tuyệt đối.</div>
+<p><b>Yêu cầu kỹ thuật:</b> xin quyền microphone; có bắt đầu/tạm dừng/kết thúc; waveform; nghe lại giọng của học sinh; phân tích từ/âm vị khi dịch vụ hỗ trợ; cảnh báo âm thanh nhỏ, nhiễu hoặc không nhận diện; lưu điểm theo lần luyện.</p>
+<h3>4. Listening Lab – Phòng luyện nghe</h3>
+<figure><img src="assets/04-listening-lab.jpg" alt="Minh họa phòng luyện nghe"><figcaption>Hình 3. Minh họa bài tập nghe và chọn đáp án.</figcaption></figure>
+<ol><li>Listen and Choose – Nghe và chọn từ đúng.</li><li>Listen and Match – Nghe và nối từ với hình.</li><li>Listen and Fill – Nghe và điền từ.</li><li>Listen and Arrange – Nghe và sắp xếp từ thành câu.</li><li>Minimal Pairs – Phân biệt từ có âm gần giống nhau.</li><li>Listen and Repeat – Nghe và nhắc lại.</li><li>Dictation – Nghe và viết lại từ/câu.</li></ol>
+<p>Hệ thống có nghe lại theo quy định, chỉnh tốc độ, chọn UK/US, hiển thị phụ đề sau khi hoàn thành và chấm điểm kèm giải thích.</p>
+<h3>5. Phonetics Academy – Học phiên âm</h3>
+<figure><img src="assets/03-phonetics-academy.jpg" alt="Minh họa bảng IPA"><figcaption>Hình 4. Minh họa bản đồ âm IPA tương tác.</figcaption></figure>
+<table><tr><th>Bài học</th><th>Nội dung</th></tr><tr><td>Lesson 1</td><td>Introduction to Phonetics.</td></tr><tr><td>Lesson 2</td><td>Vowel Sounds – Nguyên âm.</td></tr><tr><td>Lesson 3</td><td>Consonant Sounds – Phụ âm.</td></tr><tr><td>Lesson 4</td><td>Syllables – Âm tiết.</td></tr><tr><td>Lesson 5</td><td>Word Stress – Trọng âm.</td></tr><tr><td>Lesson 6</td><td>Sentence Stress & Intonation – Trọng âm câu và ngữ điệu.</td></tr></table>
+<p>Nội dung gồm bảng IPA 44 âm theo hệ thống giảng dạy tiếng Anh Anh thường dùng; nguyên âm đơn, nguyên âm đôi, phụ âm; âm hữu thanh/vô thanh; vị trí lưỡi, môi, răng; khẩu hình; video và âm thanh mẫu; ví dụ; bài tập nhận diện và phân biệt âm.</p>
+<p><b>Ví dụ trọng âm:</b> <i>TAble</i> – trọng âm âm tiết 1; <i>beGIN</i> – trọng âm âm tiết 2; <i>eduCAtion</i> – có trọng âm chính và có thể phân tích trọng âm phụ.</p>
+<table><tr><th>Ký hiệu</th><th>Ý nghĩa</th></tr><tr><td>/ˈ/</td><td>Trọng âm chính.</td></tr><tr><td>/ˌ/</td><td>Trọng âm phụ.</td></tr><tr><td>/ə/</td><td>Âm schwa.</td></tr><tr><td>/ː/</td><td>Ký hiệu độ dài nguyên âm trong một số hệ phiên âm.</td></tr></table>
+<h3>6. Practice Center – Trung tâm bài tập</h3>
+<div class="grid"><div class="card"><h4>A. Pronunciation Practice</h4><p>Phân biệt âm, trọng âm, âm tiết, chọn cách phát âm đúng.</p></div><div class="card"><h4>B. Vocabulary Practice</h4><p>Nối từ với nghĩa, điền từ, chọn từ đúng, hoàn thành câu.</p></div><div class="card"><h4>C. Listening Practice</h4><p>Nghe và chọn, nghe và điền, nghe và viết.</p></div><div class="card"><h4>D. Speaking Situations</h4><p>Tình huống giao tiếp, hỏi đáp, mô tả hình học, giải thích bài toán.</p></div><div class="card"><h4>E. Math English Challenge</h4><p>Đọc từ Toán học, nghe thuật ngữ, mô tả hình, trình bày lời giải bằng tiếng Anh.</p></div></div>
+<div class="callout"><b>Tình huống mẫu – Fractions:</b><br>Teacher: What is a fraction?<br>Student: A fraction represents a part of a whole.<br>Teacher: What is the numerator?<br>Student: It is the top number in a fraction.<br><br>Học sinh nghe hội thoại, chọn đáp án, luyện phát âm từ khóa, ghi âm câu trả lời và nhận phản hồi AI.</div>
+<h3>7. Math English – Từ điển Toán học lớp 6</h3>
+<figure><img src="assets/05-math-english.jpg" alt="Minh họa thư viện chủ đề Math English"><figcaption>Hình 5. Minh họa thư viện chủ đề từ vựng Toán học.</figcaption></figure>
+<table><tr><th>Chủ đề</th><th>Ví dụ từ vựng</th></tr><tr><td>Numbers</td><td>Natural number, integer, digit, sum, difference.</td></tr><tr><td>Fractions</td><td>Fraction, numerator, denominator, equivalent.</td></tr><tr><td>Geometry</td><td>Triangle, rectangle, square, vertex, angle.</td></tr><tr><td>Measurement</td><td>Perimeter, area, length, width, unit.</td></tr><tr><td>Lines</td><td>Parallel, perpendicular, line segment, ray.</td></tr><tr><td>Statistics</td><td>Data, chart, frequency, average, survey.</td></tr></table>
+<p>Mỗi chủ đề có danh sách từ, IPA, âm thanh, định nghĩa Anh–Việt, ví dụ toán học, bài nghe/nói và bài kiểm tra cuối chủ đề.</p>
+<h3>8. My Progress – Theo dõi tiến bộ</h3><ul><li>Tổng số từ đã học và số lần luyện phát âm.</li><li>Điểm trung bình; từ phát âm tốt; từ cần luyện thêm.</li><li>Kết quả bài nghe và bài tập.</li><li>Biểu đồ tiến bộ theo tuần/tháng.</li><li>Gợi ý cá nhân hóa, ví dụ: “You should practice the /θ/ sound more.”</li></ul>
+<h3>9. Teacher Portal – Cổng giáo viên</h3><ul><li>Tạo lớp, thêm học sinh hoặc tạo mã tham gia.</li><li>Tạo danh sách từ theo bài học và bài luyện phát âm.</li><li>Giao bài theo lớp hoặc cá nhân; thiết lập thời hạn.</li><li>Xem điểm phát âm, từ học sinh thường phát âm sai.</li><li>Xuất báo cáo Excel/PDF; tạo bài kiểm tra trước và sau học.</li></ul>
+<h3>10. Admin – Quản trị</h3><ul><li>Quản lý tài khoản và vai trò.</li><li>Quản lý thư viện từ điển, ngân hàng câu hỏi và chủ đề Toán.</li><li>Cấu hình giọng đọc, dịch vụ AI và quyền truy cập.</li><li>Theo dõi nhật ký hoạt động và chi phí AI.</li></ul>
+</section>
+<section id="design">
+<h2>III. Hệ thống thiết kế UI/UX – Design System</h2>
+<p><b>Phong cách:</b> Modern EdTech – Playful Academic – Clean & Friendly. Hiện đại, vui tươi, mang tính giáo dục, không quá trẻ con và không rối mắt.</p>
+<h3>1. Color Palette – Bảng màu thương hiệu</h3>
+<table><tr><th>Tên màu</th><th>Mã màu</th><th>Vai trò</th></tr><tr><td>Primary Navy</td><td>#173B63</td><td>Màu chủ đạo.</td></tr><tr><td>Bright Blue</td><td>#3985E8</td><td>Nút hành động.</td></tr><tr><td>Learning Teal</td><td>#21B5A5</td><td>Học tập, tiến bộ.</td></tr><tr><td>Sunny Yellow</td><td>#F5C95B</td><td>Điểm nhấn.</td></tr><tr><td>Soft Lavender</td><td>#E9E5FF</td><td>Khu vực phụ.</td></tr><tr><td>Soft Background</td><td>#F5F7FB</td><td>Nền giao diện.</td></tr><tr><td>Success Green</td><td>#239B70</td><td>Hoàn thành.</td></tr><tr><td>Coral</td><td>#F18A72</td><td>Cảnh báo nhẹ.</td></tr></table>
+<p>Nguyên tắc: khoảng 60% nền sáng, 30% màu xanh chủ đạo, 10% màu nhấn; tránh nhiều màu bão hòa trên cùng màn hình; bảo đảm tương phản chữ/nền.</p>
+<h3>2. Typography – Hệ thống chữ</h3>
+<table><tr><th>Thành phần</th><th>Đề xuất</th></tr><tr><td>Font giao diện</td><td>Inter.</td></tr><tr><td>Font tiêu đề</td><td>Poppins.</td></tr><tr><td>Font IPA</td><td>Noto Sans hoặc font tương thích Unicode IPA.</td></tr><tr><td>Font số liệu</td><td>Inter, chữ số rõ ràng.</td></tr><tr><td>H1</td><td>32 px.</td></tr><tr><td>H2</td><td>26 px.</td></tr><tr><td>H3</td><td>20 px.</td></tr><tr><td>H4</td><td>16 px.</td></tr><tr><td>Body</td><td>15–16 px.</td></tr><tr><td>Caption</td><td>12–13 px.</td></tr><tr><td>IPA</td><td>22–28 px.</td></tr><tr><td>Từ vựng chính</td><td>32–40 px.</td></tr></table>
+<ul><li>Không quá 2 họ font chính; tối đa 3 cấp độ tiêu đề trong một màn hình.</li><li>Line-height nội dung khoảng 1.5; tránh font quá mảnh.</li><li>Ưu tiên căn trái; IPA nổi bật và không lỗi ký tự.</li><li>Nút có nhãn rõ ràng, không chỉ dùng icon.</li><li>Không dùng chữ in hoa cho cả đoạn văn.</li></ul>
+<h3>3. Spacing và bố cục</h3>
+<table><tr><th>Thành phần</th><th>Quy chuẩn</th></tr><tr><td>Spacing</td><td>Bội số 4 px.</td></tr><tr><td>Khoảng cách giữa khối</td><td>24–32 px.</td></tr><tr><td>Padding card</td><td>20–24 px.</td></tr><tr><td>Border radius card</td><td>14–18 px.</td></tr><tr><td>Nút chính</td><td>Cao 48–52 px.</td></tr><tr><td>Icon</td><td>20–24 px.</td></tr><tr><td>Vùng chạm mobile</td><td>Tối thiểu 44 × 44 px.</td></tr><tr><td>Chiều rộng nội dung</td><td>Tối đa khoảng 1200 px.</td></tr></table>
+<h3>4. Điều hướng</h3><p>Desktop: menu bên trái gồm Home, Dictionary, Pronunciation Lab, Listening Lab, Phonetics Academy, Practice Center, Math English, My Progress và Teacher Portal. Mobile: thanh điều hướng dưới gồm Home, Learn, Practice, Progress, Profile; chức năng khác nằm trong menu mở rộng.</p>
+</section>
+<section id="tech">
+<h2>IV. Kiến trúc công nghệ và AI</h2>
+<p>Đề xuất phát triển dạng Web App kết hợp PWA (Progressive Web App). Học sinh truy cập bằng trình duyệt và có thể cài biểu tượng lên màn hình điện thoại mà chưa cần phát triển riêng ứng dụng Android/iOS.</p>
+<h3>1. Technology Stack</h3>
+<div class="flow"><div>Frontend: Next.js + React + TypeScript<br><small>Giao diện, trang học tập, tương tác, PWA</small></div><div class="down">↓</div><div>UI Design: Tailwind CSS + shadcn/ui<br><small>Design System, component và bố cục</small></div><div class="down">↓</div><div>Backend & Database: Supabase + PostgreSQL<br><small>Tài khoản, lớp học, từ điển, bài tập, kết quả</small></div><div class="down">↓</div><div>AI Speech Engine: Microsoft Azure AI Speech<br><small>Text-to-Speech, nhận diện, đánh giá phát âm</small></div><div class="down">↓</div><div>Dictionary & Content Database<br><small>IPA, định nghĩa, ví dụ, nghĩa tiếng Việt, Math English</small></div></div>
+<h3>2. Công nghệ phát âm</h3>
+<p>Đề xuất đánh giá Microsoft Azure AI Speech. Các chỉ số có thể bao gồm Accuracy Score, Fluency Score, Completeness Score, Prosody Score và phản hồi cấp từ/âm vị tùy chế độ, ngôn ngữ và cấu hình dịch vụ.</p>
+<div class="callout warn"><b>Lưu ý kỹ thuật cần xác minh trước khi triển khai:</b> tài liệu Azure cần được kiểm tra theo phiên bản dịch vụ, locale và chế độ đánh giá hiện hành. Khả năng đánh giá prosody có thể khác nhau giữa en-GB và en-US; không được giả định hai locale có bộ chỉ số hoàn toàn giống nhau.</div>
+<p>Locale giọng đọc: <b>en-GB</b> (Anh–Anh) và <b>en-US</b> (Anh–Mỹ). Điều chỉnh tốc độ qua SSML; cho phép nghe lặp và điều chỉnh cao độ nếu phù hợp.</p>
+<h3>3. Quy trình chấm điểm</h3>
+<div class="flow"><div>Reference Word – Từ chuẩn</div><div class="down">↓</div><div>Microphone Recording – Thu âm học sinh</div><div class="down">↓</div><div>Audio Processing – Kiểm tra chất lượng âm thanh</div><div class="down">↓</div><div>Pronunciation Assessment – Phân tích phát âm</div><div class="down">↓</div><div>Scoring & Feedback Engine – Tổng hợp điểm và lỗi</div><div class="down">↓</div><div>Student Report – Điểm + lỗi + hướng dẫn luyện lại</div></div>
+<h3>4. Nguồn dữ liệu từ điển</h3>
+<table><tr><th>Nguồn</th><th>Vai trò</th></tr><tr><td>Dictionary API có bản quyền</td><td>IPA, định nghĩa và ví dụ.</td></tr><tr><td>Cơ sở dữ liệu nội bộ</td><td>Nghĩa tiếng Việt, thuật ngữ Toán 6.</td></tr><tr><td>AI hỗ trợ biên soạn</td><td>Tạo ví dụ, bài tập, tình huống và phản hồi; nội dung phải được kiểm duyệt.</td></tr></table>
+<div class="callout"><b>Về Oxford:</b> Có thể tham khảo Oxford Dictionaries API hoặc nhà cung cấp có giấy phép. Không mặc định được sao chép toàn bộ nội dung Oxford vào cơ sở dữ liệu. Cần tuân thủ điều khoản về lưu trữ, sử dụng ngoại tuyến và thương hiệu. Có thể biên soạn định nghĩa học tập theo phong cách từ điển, không sao chép nguyên văn.</div>
+</section>
+<section id="database">
+<h2>V. Thiết kế cơ sở dữ liệu</h2>
+<p>Không lưu toàn bộ dữ liệu trong một trang hoặc một file JavaScript. Đề xuất các bảng dữ liệu:</p>
+<table><tr><th>Bảng</th><th>Chức năng</th></tr><tr><td>users</td><td>Tài khoản người dùng.</td></tr><tr><td>profiles</td><td>Hồ sơ học sinh, giáo viên.</td></tr><tr><td>classes</td><td>Lớp học.</td></tr><tr><td>class_members</td><td>Thành viên lớp.</td></tr><tr><td>vocabulary</td><td>Danh sách từ vựng.</td></tr><tr><td>pronunciations</td><td>Phiên âm Anh–Anh, Anh–Mỹ.</td></tr><tr><td>definitions</td><td>Định nghĩa Anh–Việt.</td></tr><tr><td>examples</td><td>Câu ví dụ.</td></tr><tr><td>audio_assets</td><td>Âm thanh mẫu.</td></tr><tr><td>phonetics</td><td>Dữ liệu IPA, âm vị.</td></tr><tr><td>exercises / questions</td><td>Ngân hàng bài tập và câu hỏi.</td></tr><tr><td>assignments</td><td>Bài tập được giao.</td></tr><tr><td>submissions</td><td>Bài làm.</td></tr><tr><td>pronunciation_results</td><td>Kết quả luyện nói.</td></tr><tr><td>learning_progress</td><td>Tiến độ học tập.</td></tr><tr><td>achievements</td><td>Huy hiệu.</td></tr><tr><td>learning_sessions</td><td>Lịch sử học tập.</td></tr></table>
+<h3>Ví dụ cấu trúc dữ liệu từ fraction</h3>
+<pre>{
+  "word": "fraction",
+  "part_of_speech": "noun",
+  "topic": "Fractions",
+  "level": "A2",
+  "uk_ipa": "/ˈfræk.ʃən/",
+  "us_ipa": "/ˈfræk.ʃən/",
+  "syllables": ["frac", "tion"],
+  "primary_stress": 1,
+  "english_definition": "A part of a whole.",
+  "vietnamese_meaning": "Phân số; một phần của tổng thể.",
+  "examples": [{
+    "sentence": "One half is a fraction.",
+    "translation": "Một phần hai là một phân số."
+  }],
+  "math_topic": "Fractions",
+  "status": "published"
+}</pre>
+<p>Đây là dữ liệu minh họa; phiên âm, định nghĩa và ví dụ thực tế cần được kiểm chứng theo nguồn từ điển đã chọn.</p>
+<h3>Quy tắc bảo mật</h3><ul><li>Không để lộ API Key trên trình duyệt.</li><li>Mọi yêu cầu chấm điểm đi qua backend.</li><li>Phân quyền học sinh, giáo viên và quản trị viên.</li><li>Bật Row Level Security (RLS) cho Supabase.</li><li>Không công khai bản ghi giọng nói của học sinh.</li><li>Chỉ lưu âm thanh khi cần thiết và có sự cho phép phù hợp.</li><li>Có chính sách xóa dữ liệu, thời hạn lưu trữ và sao lưu.</li><li>Tuân thủ quy định bảo vệ dữ liệu cá nhân áp dụng tại Việt Nam.</li></ul>
+</section>
+<section id="nfr">
+<h2>VI. Yêu cầu phi chức năng</h2>
+<table><tr><th>Tiêu chí</th><th>Yêu cầu</th></tr><tr><td>Responsive</td><td>Điện thoại, tablet, desktop.</td></tr><tr><td>Performance</td><td>Tải trang nhanh, tối ưu âm thanh.</td></tr><tr><td>Usability</td><td>Học sinh lớp 6 dễ sử dụng.</td></tr><tr><td>Accessibility</td><td>Hỗ trợ bàn phím, tương phản, phụ đề.</td></tr><tr><td>Security</td><td>Phân quyền, bảo vệ dữ liệu.</td></tr><tr><td>Scalability</td><td>Mở rộng được số lớp và người dùng.</td></tr><tr><td>Reliability</td><td>Có thông báo lỗi và thử lại.</td></tr><tr><td>Compatibility</td><td>Hỗ trợ trình duyệt phổ biến.</td></tr><tr><td>Backup</td><td>Sao lưu cơ sở dữ liệu.</td></tr><tr><td>Monitoring</td><td>Theo dõi lỗi và chi phí AI.</td></tr></table>
+<p>Khi microphone hoặc dịch vụ AI không hoạt động, học sinh vẫn có thể học từ vựng, nghe âm thanh đã lưu và làm bài tập không yêu cầu ghi âm.</p>
+</section>
+<section id="roadmap">
+<h2>VII. Lộ trình phát triển ứng dụng</h2>
+<div class="card"><h4>Giai đoạn 1 – MVP: Từ điển và luyện phát âm</h4><ul><li>Nhập từ và tìm kiếm.</li><li>Phiên âm UK/US; định nghĩa Anh–Việt; ví dụ.</li><li>Nghe mẫu, chỉnh tốc độ, nghe lặp.</li><li>Ghi âm, chấm điểm AI, xem kết quả.</li></ul><b>Ưu tiên hoàn thành đầu tiên.</b></div>
+<div class="card"><h4>Giai đoạn 2 – Học phiên âm và luyện tập</h4><ul><li>Phonetics Academy; bài tập nhận diện âm và trọng âm.</li><li>Listening Lab; Minimal Pairs; sổ tay từ vựng.</li></ul></div>
+<div class="card"><h4>Giai đoạn 3 – Math English và AI Learning</h4><ul><li>Thư viện Toán 6; bài tập tình huống; hội thoại Toán.</li><li>AI tạo bài tập và phản hồi cá nhân hóa.</li></ul></div>
+<div class="card"><h4>Giai đoạn 4 – Teacher Portal và Analytics</h4><ul><li>Quản lý lớp, giao bài, theo dõi học sinh.</li><li>Báo cáo Excel/PDF; thống kê lỗi phát âm phổ biến.</li></ul></div>
+<h3>Tiêu chí nghiệm thu MVP</h3>
+<ul><li>Nhập từ hợp lệ và trả về đúng dữ liệu.</li><li>Có IPA UK/US, định nghĩa Anh–Việt, ví dụ và bản dịch.</li><li>Nghe được âm thanh mẫu; chỉnh tốc độ; nghe lặp.</li><li>Xin quyền microphone đúng cách; ghi âm và gửi dữ liệu thành công.</li><li>Trả về điểm phát âm và phản hồi; hiển thị lỗi âm vị khi dịch vụ hỗ trợ.</li><li>Lưu kết quả luyện tập.</li><li>Hoạt động trên điện thoại và máy tính.</li><li>Không để lộ khóa dịch vụ AI.</li></ul>
+</section>
+<section id="advanced">
+<h2>VIII. Tính năng nâng cao nên bổ sung</h2>
+<table><tr><th>Tính năng</th><th>Giá trị sư phạm</th></tr><tr><td>Personal Vocabulary Book</td><td>Mỗi học sinh có sổ từ vựng riêng.</td></tr><tr><td>Spaced Repetition</td><td>Nhắc lại từ theo chu kỳ.</td></tr><tr><td>Word of the Day</td><td>Mỗi ngày học một từ mới.</td></tr><tr><td>Pronunciation Challenge</td><td>Thử thách phát âm theo chủ đề.</td></tr><tr><td>Compare My Voice</td><td>So sánh bản ghi học sinh với âm mẫu.</td></tr><tr><td>AI Speaking Partner</td><td>AI đóng vai người đối thoại tiếng Anh.</td></tr><tr><td>Weekly Learning Report</td><td>Báo cáo kết quả hằng tuần.</td></tr></table>
+<h3>Pronunciation Error Bank – Ngân hàng lỗi phát âm</h3>
+<p>Thống kê lỗi phổ biến trong lớp, ví dụ nhầm /θ/ và /t/, /ʃ/ và /s/, /ɪ/ và /iː/, hoặc đặt sai trọng âm. Giáo viên sử dụng dữ liệu này để thiết kế hoạt động bổ trợ. Không gắn nhãn tiêu cực cho học sinh; tập trung vào âm cần luyện.</p>
+</section>
+<section id="delivery">
+<h2>IX. Tiêu chuẩn bàn giao sản phẩm</h2>
+<ol><li>Web App hoạt động thực tế.</li><li>Giao diện Desktop, Tablet và Mobile.</li><li>Tài khoản học sinh, giáo viên và quản trị viên.</li><li>Cơ sở dữ liệu từ vựng.</li><li>Kết nối dịch vụ AI phát âm.</li><li>Hệ thống âm thanh UK/US.</li><li>Ngân hàng bài tập.</li><li>Hệ thống lưu điểm và tiến độ.</li><li>Trang quản lý giáo viên.</li><li>Tài liệu hướng dẫn sử dụng và quản trị.</li></ol>
+</section>
+<section id="implementation">
+<h2>X. Định hướng triển khai thực tế</h2>
+<h3>1. Công cụ có thể lựa chọn</h3>
+<table><tr><th>Công cụ</th><th>Vai trò</th></tr><tr><td>Lovable</td><td>Hỗ trợ tạo giao diện và ứng dụng từ mô tả.</td></tr><tr><td>Bolt.new</td><td>Phát triển ứng dụng web với AI.</td></tr><tr><td>Supabase</td><td>Cơ sở dữ liệu, xác thực và backend.</td></tr><tr><td>Microsoft Azure AI Speech</td><td>Phát âm và đánh giá giọng nói.</td></tr></table>
+<p>Không nên yêu cầu AI tạo toàn bộ ứng dụng chỉ bằng một câu lệnh. Nên phát triển từng module, kiểm thử rồi tích hợp.</p>
+<h3>2. Thứ tự xây dựng tối ưu</h3><ol><li>Hoàn thiện Design System và giao diện tổng thể.</li><li>Xây dựng từ điển thông minh.</li><li>Kết nối phát âm UK/US.</li><li>Kết nối microphone và Pronunciation Assessment.</li><li>Xây dựng Phonetics Academy.</li><li>Xây dựng Listening Lab và Practice Center.</li><li>Tạo thư viện Math English 6.</li><li>Xây dựng Teacher Portal.</li></ol>
+</section>
+<section id="decisions">
+<h2>XI. Cấu hình dự án cần chốt</h2>
+<table><tr><th>Quyết định</th><th>Phương án</th></tr><tr><td>Nền tảng</td><td>Web App; PWA; hoặc ứng dụng di động Android/iOS.</td></tr><tr><td>Đối tượng</td><td>Chỉ học sinh; học sinh và giáo viên; hoặc nhiều trường học.</td></tr><tr><td>Phương pháp xây dựng</td><td>AI hạn chế lập trình thủ công; mã nguồn tùy chỉnh sâu; hoặc kết hợp.</td></tr></table>
+<div class="callout success"><b>Đề xuất:</b> Web App + PWA, phục vụ cả học sinh và giáo viên, phát triển theo phương án kết hợp AI và mã nguồn. Hướng này cân bằng giữa tính dễ triển khai, khả năng mở rộng và chất lượng kỹ thuật; có thể mở rộng sang Toán 7, 8, 9 và các môn học bằng tiếng Anh.</div>
+<h3>Thông điệp thương hiệu</h3><p style="font-size:23px;font-weight:800;color:#173B63">Learn English. Speak Mathematics. Build Confidence.</p>
+</section>
+</main>
+</div>
+<footer><b>MATH ENGLISH 6</b><br>System Specification • UI/UX Design • AI Pronunciation Learning<br><small>Tài liệu đặc tả đề xuất – phiên bản 1.0</small></footer>
+</body></html>
